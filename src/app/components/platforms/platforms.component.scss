@@ -12,7 +12,6 @@
   display: flex;
   gap: 24px;
   margin: 80px 0 77px;
-  overflow: hidden;
 }
 
 .logo-btn {
@@ -57,6 +56,14 @@
   &:hover {
     color: #000;
     background-color: transparent;
+  }
+}
+
+/* 767px-1300px */
+
+@media screen and (max-width: 1300px) {
+  .btns {
+    overflow: hidden;
   }
 }
 
