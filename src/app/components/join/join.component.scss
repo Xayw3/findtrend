@@ -1,0 +1,42 @@
+.join {
+  background-color: #A8FF35;
+}
+
+.title {
+  max-width: 740px;
+  font-size: 72px;
+  font-weight: 900;
+  margin: 0 auto 40px;
+  text-align: center;
+
+  & span {
+    color: #87D322;
+  }
+}
+
+.btn {
+  color: #fff;
+  background-color: #000;
+  border-radius: 40px;
+  padding: 16px 32px;
+  border: 1px solid #000;
+  margin: 0 auto;
+  display: block;
+  max-width: 180px;
+  text-align: center;
+
+  &:hover {
+    color: #000;
+    background-color: #fff;
+  }
+}
+
+/* 576px-767px */
+
+@media screen and (max-width: 767px) {
+  .title {
+    font-size: 36px;
+    line-height: 42px;
+    max-width: 400px;
+  }
+}

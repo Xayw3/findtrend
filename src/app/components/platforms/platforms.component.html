@@ -1,0 +1,18 @@
+<section class="platforms">
+  <div class="container">
+    <h3 class="title">
+      All platform connect to Findtrend
+    </h3>
+    <div class="btns">
+      <button class="logo-btn" *ngFor="let platform of platforms; let i = index" [class.active]="selectedIndex === i">
+        <img src={{platform.logo}} alt={{platform.name}}>
+      </button>
+    </div>
+    <div class="tweets">
+      <img *ngFor="let tweet of tweets" src={{tweet}} alt="tweet">
+    </div>
+    <button class="btn">
+      View More Trend
+    </button>
+  </div>
+</section>

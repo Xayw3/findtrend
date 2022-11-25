@@ -1,0 +1,15 @@
+<footer class="footer">
+  <div class="container footer__container">
+    <a class="logo" href="#">
+      <img src="../../../assets/images/footer-logo.svg" alt="Findtrend">
+      Findtrend
+    </a>
+    <nav class="menu">
+      <ul class="menu__list">
+        <li *ngFor="let item of menu">
+          <a class="menu__link" href="#">{{item}}</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>

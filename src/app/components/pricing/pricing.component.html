@@ -1,0 +1,38 @@
+<section class="pricing">
+ <div class="container">
+  <h3 class="title">
+    Get your best deal
+  </h3>
+  <div class="switch-wrapper">
+    <p class="text active">
+      Monthly
+    </p>
+    <label class="switch">
+      <input type="checkbox">
+      <span class="slider"></span>
+    </label>
+    <p class="text">
+      Yearly
+    </p>
+  </div>
+  <div class="tariffs">
+    <div class="tariff" *ngFor="let tariff of tariffs; let i = index" [class.active]="selectedIndex === i">
+      <h4 class="tariff__title">{{tariff.title}}</h4>
+      <p class="tariff__desc">{{tariff.description}}</p>
+      <div class="price">
+        <span class="tariff__price">{{tariff.price}}</span>
+        <span>
+          /Month
+        </span>
+      </div>
+      <div class="text-wrapper" *ngFor="let point of tariff.points">
+        <img src="../../../assets/images/check.svg" alt="check">
+        <p>{{point}}</p>
+      </div>
+      <a href="#" class="btn">
+        Start Free Trial
+      </a>
+    </div>
+  </div>
+ </div>
+</section>

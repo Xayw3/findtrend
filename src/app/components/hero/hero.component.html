@@ -1,0 +1,18 @@
+<header class="hero">
+  <app-header></app-header>
+  <div class="container">
+    <app-header-mobile></app-header-mobile>
+    <h1 class="title">
+      Minimize your tabs. Find the trends!
+    </h1>
+    <p class="hero__text">
+      Don’t let your computer memories consumes all of those browser tabs. Findtrend  let you gathers all of your favorite website into one place.
+    </p>
+    <a href="#" class="btn">
+      Get Started 🔥
+    </a>
+    <div class="tabs">
+      <app-tab *ngFor="let tab of tabs" [props]="tab" className="hero__tab"></app-tab>
+    </div>
+  </div>
+</header>

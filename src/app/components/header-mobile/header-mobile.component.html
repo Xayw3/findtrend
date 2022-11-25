@@ -1,0 +1,22 @@
+<div class="header-wrapper" [ngClass]="isBottom ? '' : 'sticky'">
+  <div class="header">
+    <a routerLink="/" class="logo">
+      <img src="../../../assets/images/logo.svg" alt="Findtrend">
+    </a>
+    <button class="btn" [ngClass]="active ? 'active' : ''" (click)="clickEvent()"></button>
+    <nav class="menu" [ngClass]="active ? 'active' : ''">
+      <ul class="menu__list">
+        <li class="menu__item" *ngFor="let link of links">
+          <a class="menu__link" routerLink="/">{{link}}</a>
+        </li>
+        <li class="menu__item">
+          <a routerLink="/login" class="menu__link">Login</a>
+        </li>
+        <li class="menu__item">
+          <a routerLink="/register" class="menu__btn">Register</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<router-outlet></router-outlet>

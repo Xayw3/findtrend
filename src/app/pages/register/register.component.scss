@@ -1,0 +1,58 @@
+label {
+  margin-bottom: 0.5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.header-wrapper {
+  background-color: #000;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 85.54px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.footer-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #A8FF35;
+}
+
+/* 768-991px */
+
+@media screen and (max-width: 991px)  {
+  .header-wrapper {
+    width: 100%;
+    height: 92px;
+  }
+}
+
+/* 576px-767px */
+
+@media screen and (max-width: 767px) {
+  .title {
+    font-size: 36px;
+  }
+
+  .footer-wrapper {
+    position: relative;
+    min-height: 50vh;
+  }
+}
+
+/* 320-450px */
+
+@media screen and (max-width: 450px) {
+  .title {
+    font-size: 31px;
+    line-height: 40px;
+  }
+}

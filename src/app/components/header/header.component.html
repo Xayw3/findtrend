@@ -1,0 +1,18 @@
+<div class="header">
+  <a routerLink="/" class="logo">
+    <img src="../../../assets/images/logo.svg" alt="Findtrend">
+    Findtrend
+  </a>
+  <nav class="menu">
+    <ul class="menu__list">
+      <li class="menu__item" *ngFor="let link of links">
+        <a class="menu__link" routerLink="/">{{link}}</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="btn-wrapper">
+    <a routerLink="/login" class="btn-login">Login</a>
+    <a routerLink="/register" class="btn-register">Register</a>
+  </div>
+</div>
+<router-outlet></router-outlet>

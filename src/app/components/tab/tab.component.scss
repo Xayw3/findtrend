@@ -1,0 +1,48 @@
+.tab {
+  display: flex;
+  background-color: #030303;
+  padding: 25px 23px 25px 39px;
+  max-width: max-content;
+  align-items: center;
+  color: #fff;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 85px;
+    background: linear-gradient(270deg, #030303 53.65%, rgba(3, 3, 3, 0.6) 100%);
+  }
+}
+
+.tab__text {
+  max-width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: 'Roboto', sans-serif;
+  font-size: 23px;
+}
+
+.tab__logo {
+  margin-right: 14px;
+}
+
+.btn {
+  background: none;
+  border: none;
+  outline: none;
+  z-index: 2;
+  cursor: auto;
+}
+
+.hero__tab {
+  filter: drop-shadow(14px 11px 5px #000);
+  background-color: #181818;
+
+  &::after {
+    background: linear-gradient(270deg, #181818 53.65%, rgba(24, 24, 24, 0.8) 100%);
+  }
+}
