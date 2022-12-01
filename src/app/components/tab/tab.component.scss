@@ -1,10 +1,12 @@
+@import '../../../assets/styles/vars.scss';
+
 .tab {
   display: flex;
-  background-color: #030303;
+  background-color: $tab-bg;
   padding: 25px 23px 25px 39px;
   max-width: max-content;
   align-items: center;
-  color: #fff;
+  color: $white;
   position: relative;
 
   &::after {
@@ -14,7 +16,7 @@
     right: 0;
     height: 100%;
     width: 85px;
-    background: linear-gradient(270deg, #030303 53.65%, rgba(3, 3, 3, 0.6) 100%);
+    background: linear-gradient(270deg, $tab-bg 53.65%, rgba(3, 3, 3, 0.6) 100%);
   }
 }
 

@@ -1,9 +1,9 @@
+@import '../../../assets/styles/vars.scss';
+@import '../../../assets/styles/mixins.scss';
+
 .title {
-  font-weight: 700;
-  font-size: 64px;
-  line-height: 76px;
+  @include title;
   margin-bottom: 80px;
-  text-align: center;
 }
 
 .companies {
@@ -16,7 +16,7 @@
   min-height: 120px;
   display: flex;
   justify-content: center;
-  background-color: #F5F5F5;
+  background-color: $dark-white;
   border-radius: 8px;
 }
 

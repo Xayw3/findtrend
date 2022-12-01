@@ -1,3 +1,5 @@
+@import '../../../assets/styles/vars.scss';
+
 .header {
   padding: 24px 0;
   justify-content: space-between;
@@ -21,7 +23,7 @@
   display: none;
 
   &.sticky {
-    background-color: #000;
+    background-color: $black;
   }
 }
 
@@ -33,7 +35,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(#000, .5);
+  background-color: rgba($black, .5);
 
   &.active {
     display: block;
@@ -44,7 +46,7 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
-  background-color: #000;
+  background-color: $black;
   padding-top: 168px;
   padding-bottom: 80px;
   z-index: 10;
@@ -53,13 +55,13 @@
 }
 
 .menu__link {
-  color: #fff;
+  color: $white;
 }
 
 .menu__btn {
   padding: 12px 32px;
   color: #000;
-  background-color: #fff;
+  background-color: $white;
   border-radius: 40px;
 }
 
@@ -84,7 +86,7 @@
     right: 0px;
     width: 18px;
     height: 2px;
-    background-color: #fff;
+    background-color: $white;
     transition: .5s ease;
     transform: rotate(0);
   }
