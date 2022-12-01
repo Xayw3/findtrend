@@ -1,5 +1,22 @@
 # Findtrend
 
+Live app: https://findtrend-three.vercel.app/
+
+Uzdevuma nosacījumi:
+- Izveidot angular projektu izmantojot jaunāko versiju;
+- Uzstādīt bootstrap moduli (https://ng-bootstrap.github.io/#/home);
+- Sagatavot projekta struktūru un nepieciešamās komponentes, atbilstoši norādītajam
+dizainam (galvenais ekrāns) -
+https://www.figma.com/file/XOhO5dqfwJqisHPo9XxTcc/Findtrend-Webflow-(Free-Code)-
+(Community)?node-id=0%3A1
+- Projektam jāatbalsta dažāda izmēra ekrāni (tai skaitā mobilās ierīces)
+- Izmantojot norādīto dizainu, sagatavot Login un Register ekrānus:
+- Par pamatu, formās izmantot bootstrap piedāvātos noformējuma stilus un
+lauku validācijas elementus;
+- Izņemot Login un Register pogas, pārējās saites vai pogas pievienot bez kaut
+kādas darbības (aktīvas, klikojamas, bet ne kas nenotiek);
+- Projektu izvietot publiskajā repozitorijā.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.2.
 
 ## Development server
